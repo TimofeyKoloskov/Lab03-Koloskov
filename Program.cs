@@ -121,10 +121,20 @@
 // Console.WriteLine($"Льгота: {hasBenefit}");
 // Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
 // Console.WriteLine($"Итоговый балл: {totalScore}");
-bool isEven = false;
-Console.WriteLine("Введите целое число: ");
-int celNumber = int.Parse(Console.ReadLine());
-if (celNumber % 2 == 0)
-    isEven = true;
 
-Console.WriteLine($"Целое число: {isEven}");
+// bool isEven = false;
+// Console.WriteLine("Введите целое число: ");
+// int celNumber = int.Parse(Console.ReadLine());
+// if (celNumber % 2 == 0)
+//     isEven = true;
+
+// Console.WriteLine($"Целое число: {isEven}");
+
+Console.WriteLine("Банковский счёт");
+
+double balance = 1000;
+
+Console.WriteLine($"Начальный баланс: {balance++}"); // изменяет значение добавляя 1, но в выводе оставляет старое значение до изменений
+Console.WriteLine($"После пополнения на 1: {balance}");
+
+Console.WriteLine($"После пополнения ещё на 1: {++balance}"); // изменяет значение добавляя 1, как в коде, так и в выводе
