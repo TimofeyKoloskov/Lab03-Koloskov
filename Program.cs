@@ -146,7 +146,7 @@ int cardInput = int.Parse(Console.ReadLine());
 bool hasCard = (cardInput == 1);
 Console.WriteLine("Введите количество товаров в чеке: ");
 int tovar = int.Parse(Console.ReadLine());
-bool eligibleForDiscount = sum >= 3000 && tovar >= 3 || hasCard = true;
+bool eligibleForDiscount = sum >= 3000 && tovar >= 3 || hasCard;
 Console.WriteLine($"Сумма покупки: {sum}");
 Console.WriteLine($"Наличие карты: {hasCard}");
 Console.WriteLine($"Количество товаров в чеке: {tovar}");
