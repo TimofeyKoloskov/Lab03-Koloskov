@@ -138,3 +138,16 @@ Console.WriteLine($"Начальный баланс: {balance++}"); // изме�
 Console.WriteLine($"После пополнения на 1: {balance}");
 
 Console.WriteLine($"После пополнения ещё на 1: {++balance}"); // изменяет значение добавляя 1, как в коде, так и в выводе
+
+Console.WriteLine("Введите сумму покупки: ");
+double sum = double.Parse(Console.ReadLine());
+Console.WriteLine("Есть ли у вас карта постоянного клиента? (1 - да, 0 - нет): ");
+int cardInput = int.Parse(Console.ReadLine());
+bool hasCard = (cardInput == 1);
+Console.WriteLine("Введите количество товаров в чеке: ");
+int tovar = int.Parse(Console.ReadLine());
+bool eligibleForDiscount = sum >= 3000 && tovar >= 3 || hasCard = true;
+Console.WriteLine($"Сумма покупки: {sum}");
+Console.WriteLine($"Наличие карты: {hasCard}");
+Console.WriteLine($"Количество товаров в чеке: {tovar}");
+Console.WriteLine($"Имеет право на скидку: {eligibleForDiscount}");
